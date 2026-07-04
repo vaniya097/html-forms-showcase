@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in HTML</title>
+</head>
+<body>
+    <u><h1>FORM SAMPLE</h1></u>
+    <form action="/action">
+        <!-- To add email and contact number-->
+        <h3>Enter your email and contact number:-</h3>
+        <input type="email" placeholder="enter your email">
+        <input type="number" placeholder="enter your phone number">
+        <br>
+        <!-- To select your city -->
+        <h3>Select your city :-</h3>
+        <select name="city" id="100">
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+        </select>
+        <br>
+        <!--RADIO BUTTON to select your class -->
+        <h3>Select your class:-</h3>
+        <label for="X">
+            <input type="radio" id="X" name="class">class X
+        </label>
+        <label for="XII">
+            <input type="radio" id="XII" name="class">class XI
+        </label>
+        <br>
+        <!-- CHECKBOX to choose your subject -->
+        <h3>Choose your subjects:-</h3>
+        <label for="physics">
+            <input type="checkbox" value="physics" name="subject" id="physics">Physics
+        </label>
+        <label for="chemistry">
+            <input type="checkbox" value="chemistry" name="subject" id="chemistry">Chemistry
+        </label>
+        <label for="maths">
+            <input type="checkbox" value="maths" name="subject" id="maths">Maths
+        </label>
+        <label for="biology">
+            <input type="checkbox" value="biology" name="subject" id="biology">Biology
+        </label>
+        <br>
+        <label for="hindi">
+            <input type="checkbox" value="hindi" name="subject" id="hindi">Hindi
+        </label>
+        <label for="english">
+            <input type="checkbox" value="english" name="subject" id="english">English
+        </label>
+        <label for="commerce">
+            <input type="checkbox" value="commerce" name="subject" id="commerce">Commerce
+        </label>
+        <label for="economics">
+            <input type="checkbox" value="economics" name="subject" id="economics">Economics
+        </label> 
+        <br>
+        <!-- To give feedback -->
+        <h3>Please give your valuable feedback here :-</h3>
+        <label for="feedback"></label>
+        <textarea name="Feedback" id="feedback" name="feedback" placeholder="please give your feedback" rows="5"></textarea>
+        <!-- To submit your form -->
+        <button>submit</button>
+    </form>
+    <br><br>
+    <hr>
+    <br>
+    <!--LOGIN PAGE SAMPLE-->
+    <u><h2>LogIn Page Sample</h2></u>
+    <br>
+    <form>
+        <label for="username">Username : </label>
+        <input type="text" id="username" placeholder="enter your username">
+        <br>
+        <label for="password">Password : </label>
+        <input type="password" id="password" placeholder="enter your password">
+        <br>
+        <label for="age">Enter Age : </label>
+        <input type="number" id="age" placeholder="enter your age">
+        <br>
+        <button type="reset">Reset</button>
+        <input type="submit" value="LogIn"> <!--button using input-->
+    </form>
+    <br><br>
+    <hr>
+    <br>
+    <!--REGISTRATION PAGE SAMPLE-->
+    <u><h2>Registration Page Sample</h2></u>
+    <br>
+    <form>
+        <div>
+            <label for="username">Username : </label>
+            <input
+                type="text"
+                placeholder="enter username"
+                id="username"
+                name="user"
+            >
+        </div>
+        <div>
+            <label for="password">Password : </label>
+            <input
+                type="password"
+                placeholder="enter password"
+                id="password"
+                name="pass"
+            >
+        </div>
+        <div>
+            <input type="checkbox" id="ages" name="age">
+            <label for="ages">I'm 18+</label>
+        </div>
+        <button>submit</button>
+    </form>
+    <br><br>
+    <hr>
+    <br><br>
+    <form action="https://www.youtube.com/results">
+        <input type="text" placeholder="search in youtube" name="search_query">
+        <button>search</button>
+    </form>
+    <br>
+    <form action="https://www.google.com/search">
+        <input type="text" placeholder="search in google" name="q">
+        <button>search</button>
+    </form>
+    <br><br>
+    <form>
+        <label for="volume">Select your volume level : </label>
+        <input type="range" id="vol" name="vol" min="0" max="100" step="10">
+    </form>
+    <br><br>
+    <hr>
+    <br>
+    <h2><u>Feedback Form</u></h2>
+    <br>
+    <form action="/contact">
+        <label for="name">Name: </label>
+        <input type="text" placeholder="Write your name" id="name">
+        <br><br>
+        <label for="email">Email: </label>
+        <input type="email" placeholder="Write your email" id="email">
+        <br><br>
+        <label for="message">Message: </label>
+        <br>
+        <textarea name="message" id="message" cols="30" rows="4"></textarea>
+        <br><br>
+        <label for="rating">Rate us our 5:</label><br>
+        <input type="radio" name="rating" id="one" value="one">
+        <label for="one">1</label><br>
+        <input type="radio" name="rating" id="two" value="two">
+        <label for="two">2</label><br>
+        <input type="radio" name="rating" id="three" value="three">
+        <label for="three">3</label><br>
+        <input type="radio" name="rating" id="four" value="four">
+        <label for="four">4</label><br>
+        <input type="radio" name="rating" id="five" value="five">
+        <label for="five">5</label><br>
+        <br><br>
+        <button>Send your message!</button>
+    </form>
+    <br><br>
+    <hr>
+    <br>
+    <h2><u>Subscription Form</u></h2>
+    <br>
+    <form action="/subscribe">
+        <label for="name">Name: </label>
+        <input type="text" name="name">
+        <br><br>
+        <label for="sex">Sex: </label>
+        <input type="radio" name="sex" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="sex" id="female" value="female">
+        <label for="female">Female</label>
+        <br><br>
+        <label for="country">Country: </label>
+        <select name="country" id="country">
+            <option>Select an option</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="nepal">Nepal</option>
+            <option value="canada">Canada</option>
+        </select>
+        <br><br>
+        <label for="message">Message: </label><br>
+        <textarea name="message" id="message" cols="30" rows="4"></textarea>
+        <br><br>
+        <input type="checkbox" name="newsletter" id="newsletter">
+        <label for="newsletter">Subscribe?</label>
+        <br><br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
